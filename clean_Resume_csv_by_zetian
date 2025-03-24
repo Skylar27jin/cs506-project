@@ -1,0 +1,19 @@
+import pandas as pd
+# df = pd.read_csv("datasets/Resume.csv")
+# # print(df.head())
+# # for i in range(4):
+# #     print("line " + str(i))
+# #     print()
+# #     print()
+# #     print(df.iloc[0][i])
+# df = df.rename(columns={'Resume_str': 'full_resume'})
+# df = df.drop(df.columns[2], axis=1) #drop resume_html format
+# df = df.drop(df.columns[0], axis=1) #drop id
+
+# df = df.drop_duplicates()
+# df = df.dropna()
+
+# df.to_csv('Resume_updated_By_Zetian.csv', index=False)
+
+updated_df = pd.read_csv('Resume_updated_By_Zetian.csv')
+print(updated_df.head())
